@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/search_city_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5">
+        <ImageView
+            android:id="@+id/search_image_view_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back"/>
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Searching"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/search_image_view_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_city_top_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/icon_search"/>
+    <EditText
+        android:id="@+id/search_edit_view_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search_city_top_layout"
+        android:layout_toLeftOf="@id/search_image_view_search_btn"
+        android:hint="Enter city name"/>
+    <TextView
+        android:id="@+id/search_text_view_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_edit_view_search_box"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Suggestion:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <GridView
+        android:id="@+id/search_grid_view_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_text_view_suggestion"
+        android:padding="10dp"
+        android:numColumns="3"></GridView>
+
+</RelativeLayout>

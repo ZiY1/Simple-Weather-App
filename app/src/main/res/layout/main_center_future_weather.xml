@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/main_center_text_timezone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timezone: default"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/main_center_text_seg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/main_center_text_timezone"
+        android:layout_marginTop="7dp" />
+    <TextView
+        android:id="@+id/main_center_text_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Quality: default"
+        android:textSize="16sp"
+        android:layout_below="@id/main_center_text_seg"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_seg2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/main_center_text_air"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Direction: default"
+        android:textSize="16sp"
+        android:layout_below="@id/main_center_text_seg2"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_seg3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/main_center_text_wind"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibility: default KM"
+        android:textSize="16sp"
+        android:layout_below="@id/main_center_text_seg3"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_seg4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_below="@id/main_center_text_visibility"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/main_center_text_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: default %"
+        android:textSize="16sp"
+        android:layout_below="@id/main_center_text_seg4"
+        android:layout_marginTop="7dp"/>
+
+
+</RelativeLayout>

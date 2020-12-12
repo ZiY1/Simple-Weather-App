@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_lightgreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/fragment_linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/fragment_text_city"
+                style="@style/text_format"
+                android:text="default New York"
+                android:textSize="38sp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/fragment_text_condition"
+                style="@style/text_format"
+                android:text="default Sunny"
+                android:textSize="30dp"
+                android:layout_below="@id/fragment_text_city"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/fragment_text_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00°C"
+                android:textSize="68sp"
+                android:textStyle="bold"
+                android:layout_below="@id/fragment_text_condition"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <!--For more infomation-->
+        <LinearLayout
+            android:id="@+id/fragment_linear_layout_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/fragment_center_background"/>
+        <!--Weather suggestion depending on API-->
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/city_manager_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5">
+        <ImageView
+            android:id="@+id/city_manager_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_back"
+            android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:id="@+id/city_manager_editing_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/city_manager_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Management"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/city_manager_seg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        android:layout_below="@id/city_manager_top_layout"/>
+
+    <ListView
+        android:id="@+id/city_manager_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/city_manager_seg"
+        android:divider="@null" />
+
+    <ImageView
+        android:id="@+id/city_manager_add_city"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:padding="3dp"
+        android:src="@mipmap/icon_add" />
+
+</RelativeLayout>

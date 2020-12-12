@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".city_management.DeleteCityActivity">
+    <RelativeLayout
+        android:id="@+id/city_delete_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5F5F5">
+        <ImageView
+            android:id="@+id/city_delete_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_cancel"
+            android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:id="@+id/city_delete_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_save"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/city_delete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Deleting"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+    <ListView
+        android:id="@+id/city_delete_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+
+</LinearLayout>
